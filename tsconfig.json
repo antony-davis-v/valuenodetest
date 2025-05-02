@@ -5,12 +5,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "strict": false,  
-    "noImplicitAny": false,
-    "strictFunctionTypes": false,
-    "alwaysStrict": false,
-    "skipLibCheck": true,     // don’t type‑check node_modules
-    "esModuleInterop": true,
+     "strict": false,  
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
