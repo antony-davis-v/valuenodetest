@@ -2,15 +2,13 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
-import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
   integrations: [react()],
-
   vite: {
     plugins: [tailwindcss()],
+    sourcemap: false,
   },
-  output: 'static',  
-  outDir: 'dist/cloudflare', 
-  adapter: cloudflare(),
+  output: 'static',  // change from 'server' to 'static'
+  outDir: 'dist/cloudflare', // optional if you want a custom output folder
 });
