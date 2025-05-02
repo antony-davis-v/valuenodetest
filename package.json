@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "deploy": "wrangler deploy",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^12.5.2",
     "@astrojs/react": "^4.2.7",
+    "@cloudflare/kv-asset-handler": "^0.4.0",
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-accordion": "^1.2.8",
     "@radix-ui/react-alert-dialog": "^1.1.11",
@@ -53,7 +56,7 @@
     "lucide-react": "^0.506.0",
     "next-themes": "^0.4.6",
     "react": "^19.1.0",
-    "react-day-picker": "^8.10.1",
+    "react-day-picker": "^9.6.7",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.56.1",
     "react-resizable-panels": "^3.0.0",
@@ -65,7 +68,13 @@
     "vaul": "^1.1.2",
     "zod": "^3.24.3"
   },
+  "overrides": {
+  "rollup-plugin-inject": "@rollup/plugin-inject@5.0.3",
+  "sourcemap-codec": "@jridgewell/sourcemap-codec@1.4.15"
+  },
   "devDependencies": {
-    "tw-animate-css": "^1.2.8"
+    "@astrojs/tailwind": "^6.0.0",
+    "tw-animate-css": "^1.2.8",
+    "wrangler": "^4.14.1"
   }
 }
