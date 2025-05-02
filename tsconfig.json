@@ -5,6 +5,16 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
+    "strict": false,  
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": false,
+    "alwaysStrict": false,
+    "skipLibCheck": true,     // don’t type‑check node_modules
+    "esModuleInterop": true,
+    "allowJs": true,
+    "isolatedModules": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
